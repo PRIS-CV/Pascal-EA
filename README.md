@@ -4,7 +4,7 @@
 > Zijin Yin, Kongming Liang, Bing Li, Zhanyu Ma, Jun Guo <br />
 > CVPR 2024
 
-Code release for "Benchmarking Segmentation Models with Mask-Preserved Attribute Editing", a framework editing visual attributes for robustness evaluation of segmentation models.
+This repository contains the code for "Benchmarking Segmentation Models with Mask-Preserved Attribute Editing", a framework editing visual attributes for robustness evaluation of segmentation models.
 
 ## Update
 
