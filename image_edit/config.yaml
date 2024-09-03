@@ -1,0 +1,50 @@
+# general
+general:
+  seed: 1
+  device: 'cuda:1'
+
+# data
+data:
+  image_path: 'data/input/chair.jpg'
+  mask_path: 'data/mask/chair.jpg'
+  output_path: 'data/output'
+  latents_path: 'latents'
+  attn_path: 'data/attn'
+
+inversion:
+  prompt: "a dining room with a table and chairs and a chandelier"
+  n_timesteps: 999
+
+
+inference: 
+  prompt: "a dining room with a table and pink chairs and a chandelier"
+  phrase: "chairs"
+  save_attn: True
+  n_timesteps: 50
+
+
+# diffusion
+model:
+  model_path: '/data2/yinzijin/checkpoints/stable-diffusion/stable-diffusion-2-1-base'
+  unet_config_path: './unet_config.json'
+  guidance_scale: 7.5
+  # pnp injection thresholds, ∈ [0, 1]
+  selfattn_inject_threshold: 0.5
+  feature_inject_threshold: 0.8
+
+
+# mask guidance loss
+loss:
+  scale: 1
+  threshold: 0.2
+  max_iter: 20
+  max_index_step: 15
+
+noise_schedule:
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "scaled_linear"
+
+
+
+
