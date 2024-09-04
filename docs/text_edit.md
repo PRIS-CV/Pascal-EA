@@ -1,7 +1,7 @@
 # Generate and Edit Text Descriptions
 
 ## Generate text descriptions
-We emply the [LLaVA1.5](https://huggingface.co/llava-hf/llava-1.5-7b-hf) to generate caption of samples in each datasets. Please run the following command.
+We employ the [LLaVA1.5](https://huggingface.co/llava-hf/llava-1.5-7b-hf) to generate caption of samples in each datasets. Please run the following command.
 ```shell
 python text_edit/generator.py --data-root $your_data_root --image-dir $your_image_dir --text-save-path $your_text_save_path
 ```

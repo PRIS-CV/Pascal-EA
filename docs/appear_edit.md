@@ -1,5 +1,5 @@
 # Edit image
-We edit images under framework of the PnP (CVPR 2023), the codes are heavily from [pnp-diffusers](https://github.com/MichalGeyer/pnp-diffusers), thanks for their contribution!
+We edit objects and images **appearance attributes** by diffusion-based editing methods. Our method adopts framework of the PnP (CVPR 2023), the codes are heavily from [pnp-diffusers](https://github.com/MichalGeyer/pnp-diffusers), thanks for their contribution!
 
 
 ## DDIM inversion

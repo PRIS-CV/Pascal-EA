@@ -37,7 +37,17 @@ pip install diffusers==0.17.1
 pip install transformers==4.26.1
 ```
 ## Get Started
-Please refer to [dataset_prepare.md](docs/dataset_prepare.md) for dataset preparation, [text_edit.md](docs/text_edit.md) for image caption editing, [image_edit.md](docs/image_edit.md) for image editing (our work mainly focuses on this part), [filter.md](docs/filter.md) for noisy filtering strategy.
+Please refer to 
+
+Step 1. [dataset_prepare.md](docs/dataset_prepare.md) for dataset preparation
+
+Step 2. [text_edit.md](docs/text_edit.md) for image caption editing
+
+Step 3. [appear_edit.md](docs/appear_edit.md) for image appearance (color, material...) attributes editing (our conference mainly focuses on this part)
+
+Step 4. [geo_edit.md](docs/geo_edit.md) for object geometry (size, position) attributes editing (our journal extention mainly focuses on this part)
+
+Step 5. [filter.md](docs/filter.md) for noisy filtering strategy.
 
 ## Acknowledgment
 Our code is built on top of several excellent research codebases and models, including [PnP](https://github.com/MichalGeyer/pnp-diffusers), [LLAMA](https://huggingface.co/docs/transformers/model_doc/llama3), and [LLaVA](https://huggingface.co/llava-hf/llava-1.5-7b-hf), and additionally borrows mask filtering strategy from [FreeMask](https://github.com/LiheYoung/FreeMask), clip directional similarity metric from [LANCE](https://github.com/virajprabhu/LANCE). Thanks for their contributions!

@@ -1,0 +1,26 @@
+# general
+general:
+  seed: 100
+  device: 'cuda:0'
+
+# data
+data:
+  image_path: 'data/image/train.png'
+  mask_path: 'data/mask/train.png'
+  semseg_path: 'data/semseg/train.png'
+  image_save_path: 'output/image'
+  mask_save_path: 'output/mask'
+  semseg_save_path: 'output/semseg'
+
+# diffusion
+model:
+  controlnet_path: '/data2/yinzijin/checkpoints/controlnet/control_v11p_sd15_seg'
+  sd_path: '/data2/yinzijin/checkpoints/stable-diffusion/stable-diffusion-inpainting'
+  
+# inference hyperparameters
+inference:
+  mode: "resize"
+  scale: 0.1
+  prompt: ""
+  n_timesteps: 50
+  guidance_scale: 7.5
